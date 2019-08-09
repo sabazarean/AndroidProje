@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new_login_gradients"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+
+android:layout_marginTop="8dp"
+    tools:context="com.music.saba.myapplication.ShellSilver">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/imgv1"
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shelphoto"
+            android:focusedByDefault="true" />
+
+        <TextView
+            android:textSize="18sp"
+            android:id="@+id/txtt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgv1"
+
+            android:layout_marginTop="10dp"
+            android:text="@string/shellinfo"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:textSize="18sp"
+            android:id="@+id/txtt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtt1"
+            android:padding="3dp"
+            android:text="نام کامل او «شلدن آلن سیلوراستاین» بود. "
+            android:textColor="@color/black" />
+
+        <TextView
+            android:textSize="18sp"
+            android:id="@+id/txtt3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtt2"
+            android:padding="3dp"
+            android:text="سیلوراستاین از کودکی استعداد ذاتی خاصی در نقاشی و نوشتن داشت.
+ خودش بعدها در جایی می نویسد که این دو کار- نقاشی و نوشتن- تنها اموری بودند که وی در آنها موفق بود"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/txtt4"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtt3"
+            android:padding="3dp"
+            android:text="معروف ترین آثار سیلور استاین، آثاری است که او برای کودکان نوشته است، هر چند بیشتر آثار او در گروه سنی خاصی نمی گنجد و به نظر می رسد که همه آدمها در هر سنی می توانند مخاطب او قرار بگیرند.
+ "
+            android:textColor="@color/black" />
+
+
+        <TextView
+            android:id="@+id/txtt6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtt4"
+
+            android:textSize="15sp"
+            android:text="آثار سیلوراستاین عبارتند از:  "
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+
+        <HorizontalScrollView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@id/txtt6"
+            android:foregroundGravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+
+                >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imgg"
+                        android:layout_width="85dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/book1"
+
+                        />
+                    <TextView
+                        android:layout_width="85dp"
+                        android:layout_height="20dp"
+                        android:text="جایی که پیاده رو تمام می شه"
+                        android:layout_below="@+id/imgg"
+                        android:layout_centerHorizontal="true"
+                        />
+                </RelativeLayout>
+                <Spinner
+                    android:layout_width="7dp"
+                    android:layout_height="wrap_content">
+
+                </Spinner>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imgg2"
+                        android:layout_width="85dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/book2"
+                        />
+                    <TextView
+                        android:layout_width="85dp"
+                        android:layout_height="20dp"
+                        android:text="درخت بخشنده"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/imgg2"
+                        />
+                </RelativeLayout>
+
+                <Spinner
+                    android:layout_width="7dp"
+                    android:layout_height="wrap_content">
+
+                </Spinner>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imgg3"
+                        android:layout_width="85dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/book4"
+                        />
+                    <TextView
+                        android:layout_width="85dp"
+                        android:gravity="center"
+                        android:foregroundGravity="center"
+                        android:layout_height="20dp"
+                        android:text="لافکادیو"
+                        android:layout_below="@+id/imgg3"
+                        android:layout_centerHorizontal="true"
+                        />
+                </RelativeLayout>
+
+                <Spinner
+                    android:layout_width="7dp"
+                    android:layout_height="wrap_content">
+
+                </Spinner>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imgg4"
+                        android:layout_width="85dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/book5"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:text="نوری دراتاق"
+                        android:layout_below="@+id/imgg4"
+                        android:gravity="center"
+                        android:foregroundGravity="center"
+                        android:layout_centerHorizontal="true"
+                        />
+                </RelativeLayout>
+
+                <Space
+                    android:layout_width="7dp"
+                    android:layout_height="wrap_content">
+                </Space>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imgg7"
+                        android:layout_width="85dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/book6"
+                        />
+                    <TextView
+                        android:layout_width="85dp"
+                        android:layout_height="20dp"
+                        android:text="یک زرافه ونصفی"
+                        android:layout_below="@+id/imgg7"
+                        android:gravity="center"
+                        android:foregroundGravity="center"
+                        android:layout_centerHorizontal="true"
+                        />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </HorizontalScrollView>
+
+    </RelativeLayout>
+
+
+</ScrollView>
+
+

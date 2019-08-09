@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2"
+    android:layout_marginTop="20dp"
+    tools:context="com.music.saba.myapplication.MainActivity">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+   android:layout_marginTop="50dp"
+    android:layout_marginLeft="120dp"
+    >
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="130dp"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:background="@drawable/shel"
+        />
+</LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="140dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+
+        >
+
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <Button
+        android:background="@drawable/customborder"
+        android:textColor="#1C2833"
+        android:id="@+id/button2"
+        android:layout_width="124dp"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:layout_marginTop="11dp"
+        android:text="طرح ها"
+        android:textAllCaps="false"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <Button
+        android:layout_marginTop="5dp"
+        android:background="@drawable/customborder"
+        android:textColor="#1C2833"
+        android:id="@+id/button3"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="Shel Silverstine"
+        android:textAllCaps="false"
+        app:layout_constraintLeft_toLeftOf="@+id/button2"
+        app:layout_constraintRight_toRightOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <Button
+        android:layout_marginTop="5dp"
+        android:background="@drawable/customborder"
+        android:textColor="#1C2833"
+        android:id="@+id/button4"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:text="طرح خودت"
+        android:textAllCaps="false"
+        app:layout_constraintLeft_toLeftOf="@+id/button3"
+        app:layout_constraintRight_toRightOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <Button
+        android:layout_marginTop="5dp"
+        android:background="@drawable/customborder"
+        android:textColor="#1C2833"
+        android:id="@+id/button5"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="سفارشات"
+        android:textAllCaps="false"
+        app:layout_constraintLeft_toLeftOf="@+id/button4"
+        app:layout_constraintRight_toRightOf="@+id/button4"
+        app:layout_constraintTop_toBottomOf="@+id/button4"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <Button
+        android:layout_marginTop="5dp"
+        android:background="@drawable/customborder"
+        android:textColor="#1C2833"
+        android:id="@+id/button6"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="درباره ما"
+        android:textAllCaps="false"
+        app:layout_constraintLeft_toLeftOf="@+id/button5"
+        app:layout_constraintRight_toRightOf="@+id/button5"
+        app:layout_constraintTop_toBottomOf="@+id/button5"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+
+    <ImageButton
+        android:id="@+id/exiBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_exit_to_app_black_24dp"
+        android:rotation="-90"
+        android:foregroundGravity="bottom"
+        app:layout_constraintLeft_toLeftOf="@+id/button6"
+        app:layout_constraintRight_toRightOf="@+id/button6"
+        app:layout_constraintTop_toBottomOf="@+id/button6"
+        android:layout_marginTop="150dp"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+
+        />
+
+
+</android.support.constraint.ConstraintLayout>
